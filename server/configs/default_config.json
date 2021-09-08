@@ -1,0 +1,7 @@
+{
+	"main_server_port": 5559,
+	"users": [
+		add here your login hashes of the users in the format
+		"squalender[username]:[password]", Eg "squalenderTestUserName:TestPassword"
+	]
+}
