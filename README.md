@@ -1,8 +1,8 @@
-# squalender
+# squalendar
 
-a calender written by a square, thats why square + calender
+a calendar written by a square, thats why square + calendar
 
 
-## purpose
+## Purpose
 
 A server and client to manage all of your appointments, birthdays and other stuff you have to remember
