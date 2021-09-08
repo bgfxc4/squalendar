@@ -10,6 +10,12 @@ const app = express()
 app.use(body_parser.json())
 
 
+app.post("/authorize", (req, res) => {
+	if (!authorized(req.body))
+		return res.status(401).send("Login credentials are wrong ore non existent!")
+	return res.send("Ok")
+})
+
 app.post("/get-appointments/:year", (req, res) => {
 	if (!authorized(req.body))
 		return res.status(401).send("You are not logged in or your credentials are wrong!\n")
