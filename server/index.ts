@@ -1,4 +1,5 @@
 import express from "express"
+import cors from "cors"
 import * as fs from "fs"
 import body_parser from "body-parser"
 import {sha512} from "js-sha512"
@@ -8,7 +9,7 @@ const config = JSON.parse(fs.readFileSync("./configs/config.json", "utf-8"))
 const app = express()
 
 app.use(body_parser.json())
-
+app.use(cors())
 
 app.post("/authorize", (req, res) => {
 	if (!authorized(req.body))
