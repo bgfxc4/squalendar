@@ -4,5 +4,23 @@
 		<script src="js/index.js"></script>
 	</head/>
 	<body>
+		<input id="yearInput" type="number" placeholder="year">
+		<input id="monthInput" type="number" placeholder="month">
+		<input id="dayInput" type="number" placeholder="day">
+		<input id="appmntInput" type="number" placeholder="appointment">
+		<input id="sendYearButton" type="button" onclick="send_clicked_year()" value="Send Year">
+		<input id="sendMonthButton" type="button" onclick="send_clicked_month()" value="Send Month">
+		<br>
+		<br>
+		<input id="nameInput" type="text" placeholder="name">
+		<input id="typeInput" type="text" placeholder="type">
+		<input id="descriptionInput" type="text" placeholder="description">
+		<input id="timebeginInput" type="text" placeholder="timebegin">
+		<input id="timeendInput" type="text" placeholder="timeend">
+		<input onclick="sendcreate()" type="button" value="create">
+		<input onclick="senddelete()" type="button" value="delete">
+		<input onclick="senddeleteday()" type="button" value="delete day">
+		<input onclick="senddeletemonth()" type="button" value="delete month">
+		<input onclick="senddeleteyear()" type="button" value="delete year">
 	</body/>
 </html>

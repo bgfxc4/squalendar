@@ -1,4 +1,4 @@
-var server_url = "http://localhost:5559/"
+var server_url = "http://bgfxc4.de/squalendar-api/"
 
 function try_login() {
 	var username = document.getElementById("usernameInput").value
@@ -12,7 +12,7 @@ function try_login() {
 			set_cookie("login_hash", login_hash, 14)
 			window.location = window.location.href.replace("login.html", "")
 		} else {
-			var a = document.getElementById("errorText").hidden = false
+			document.getElementById("errorText").hidden = false
 		}
 	}
 	xhr.open("POST", url)
