@@ -1,0 +1,178 @@
+:root {
+	--turquoise: #1abc9c;
+	--emerald: #2ecc71;
+	--green-sea: #16a085;
+	--nephriditis: #27ae60;
+	--peter-river: #3498db;
+	--belize-hole: #2980b9;
+	--wet-asphalt: #34495e;
+	--midnight-blue: #2c3e50;
+	--amethyst: #9b59b6;
+	--wisteria: #8e44ad;
+	--clouds: #ecf0f1;
+	--silver: #bdc3c7;
+	--concrete: #95a5a6;
+	--asbestos: #7f8c8d;
+	--sun-flower: #f1c40f;
+	--orange: #f39c12;
+	--carrot: #e67e22;
+	--pumpkin: #d35400;
+	--pomegranate: #c0392b;
+	--alizarin: #e74c3c;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: var(--clouds);
+	background-color: var(--midnight-blue);
+	font-family: sans-serif;
+}
+
+#top-bar {
+	position: relative;
+	width: 100%;
+	height: 25%;
+}
+
+#top-bar-tabs {
+	position: absolute;
+	height: 14%;
+	width: 77%;
+	bottom: 0;
+	margin-left: 23%;
+	vertical-align: middle;
+}
+
+.top-bar-tab {
+	display: none;
+	bottom: 0;
+	height: 100%;
+	padding-right: 3%;
+	padding-left: 3%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: var(--belize-hole);
+	border: 0;
+	color: var(--clouds);
+}
+
+.top-bar-tab:hover {
+	opacity: 0.7;
+}
+
+#top-bar-all-tab {
+	display: inline-block;
+}
+
+#left-bar {
+	border-top: 1px solid var(--green-sea);
+}
+
+#main-container {
+	display: grid;
+	grid-template-columns: 2.3fr 7.7fr;
+	height: 75%;
+}
+
+
+#day-details {
+	background-color: var(--midnightblue);
+	display: none;
+	flex-direction: column;
+	border-top: 1px solid var(--green-sea);
+	border-left: 1px solid var(--green-sea);
+	height: calc(75vh - 1px);
+	overflow-y: auto;
+}
+
+#month-calendar {
+	display: none;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	height: 100%;
+	border-left: 1px solid var(--green-sea);
+}
+
+.month-calendar-day {
+	border-top: 1px solid var(--green-sea);
+	border-right: 1px solid var(--green-sea);
+	text-align: center;
+	padding-top: 5px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: background-color 100ms, color 100ms;
+}
+
+.month-calendar-day:hover {
+	opacity: 0.7;
+}
+
+.month-calendar-name {
+	padding-bottom: 5px;
+}
+
+.month-calendar-weekend {
+	color: var(--green-sea)
+}
+
+.month-calendar-disabled-day {
+	background-color: var(--wet-asphalt);
+}
+
+.month-calendar-selected {
+	background-color: var(--green-sea);
+	color: var(--midnight-blue)
+}
+
+#year-calendar {
+	display: none;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	height: 100%;
+	border-left: 1px solid var(--green-sea);
+}
+
+.year-calendar-month {
+	border-top: 1px solid var(--green-sea);
+	border-right: 1px solid var(--green-sea);
+	text-align: center;
+	padding-top: 5px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: background-color 100ms, color 100ms;
+}
+
+.year-calendar-month:hover {
+	opacity: 0.7;
+}
+
+.year-calendar-name {
+	padding-bottom: 5px;
+}
+
+#all-calendar {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	height: 100%;
+	border-left: 1px solid var(--green-sea);
+}
+
+.all-calendar-year {
+	border-top: 1px solid var(--green-sea);
+	border-right: 1px solid var(--green-sea);
+	text-align: center;
+	padding-top: 5px;
+	font-size: 12px;
+	cursor: pointer;
+	transition: background-color 100ms, color 100ms;
+}
+
+.all-calendar-year:hover {
+	opacity: 0.7;
+}
+
+.all-calendar-name {
+	padding-bottom: 5px;
+}

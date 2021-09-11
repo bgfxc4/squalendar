@@ -1,26 +1,29 @@
 <html>
 	<head>
 		<title>squalender web client</title>
+		<script src="js/api_helper.js"></script>
 		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="style/index.css">
 	</head/>
 	<body>
-		<input id="yearInput" type="number" placeholder="year">
-		<input id="monthInput" type="number" placeholder="month">
-		<input id="dayInput" type="number" placeholder="day">
-		<input id="appmntInput" type="number" placeholder="appointment">
-		<input id="sendYearButton" type="button" onclick="send_clicked_year()" value="Send Year">
-		<input id="sendMonthButton" type="button" onclick="send_clicked_month()" value="Send Month">
-		<br>
-		<br>
-		<input id="nameInput" type="text" placeholder="name">
-		<input id="typeInput" type="text" placeholder="type">
-		<input id="descriptionInput" type="text" placeholder="description">
-		<input id="timebeginInput" type="text" placeholder="timebegin">
-		<input id="timeendInput" type="text" placeholder="timeend">
-		<input onclick="sendcreate()" type="button" value="create">
-		<input onclick="senddelete()" type="button" value="delete">
-		<input onclick="senddeleteday()" type="button" value="delete day">
-		<input onclick="senddeletemonth()" type="button" value="delete month">
-		<input onclick="senddeleteyear()" type="button" value="delete year">
+		<div id="top-bar">
+			<div id="top-bar-tabs">
+				<input id="top-bar-all-tab" onclick="all_tab_clicked()" class="top-bar-tab" type="button" value="All">
+				<input id="top-bar-year-tab" onclick="year_tab_clicked()" class="top-bar-tab" type="button" value="2021">
+				<input id="top-bar-month-tab" onclick="month_tab_clicked()" class="top-bar-tab" type="button" value="January">
+				<input id="top-bar-day-tab" class="top-bar-tab" type="button" value="1">
+			</div>
+		</div>
+		<div id="main-container">
+			<div id="left-bar"></div>
+			<div id="calendar-container">
+				<div id="all-calendar"></div>
+				<div id="year-calendar"></div>
+				<div id="month-calendar"></div>
+				<div id="day-details">
+					<h3 id="day-details-title"></h3>
+				</div>
+			</div>
+		</div>
 	</body/>
 </html>
